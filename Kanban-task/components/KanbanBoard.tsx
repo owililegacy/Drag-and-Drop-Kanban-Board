@@ -20,7 +20,7 @@ import { SortableContext, arrayMove } from "@dnd-kit/sortable";
 import { type Task, TaskCard } from "./TaskCard";
 import type { Column } from "./BoardColumn";
 import { hasDraggableData } from "./utils";
-import { coordinateGetter } from "./multipleContainersKeyboardPreset";
+import { coordinateGetter } from "./multipleContainersKeyboardPresent";
 
 const defaultCols = [
   {
