@@ -1,12 +1,20 @@
 {
+  "scripts": {
+    "tailwind:build": "NODE_ENV=production npx tailwindcss -i ./Kanban-task/src/config.css -o ./src/Kanban-task/index.css --minify",
+    "tailwind:watch": "npx tailwindcss -i ./Kanban-task/src/config.css -o ./Kanban-task/src/index.css --watch",
+    "dev": "concurrently \"npx tailwindcss -i ./Kanban-task/src/config.css -o ./Kanban-task/src/index.css --watch\" \"vite src\""
+  },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
     "postcss": "^8.5.6",
     "tailwind": "^2.3.1",
-    "tailwindcss-cli": "^0.1.2"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-cli": "^0.1.2",
+    "vite": "^7.1.7"
   }
 }

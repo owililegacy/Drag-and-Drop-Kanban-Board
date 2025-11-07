@@ -24,12 +24,12 @@ function App() {
         <div className="min-h-screen flex flex-col">
           <header className="flex justify-between w-full flex-row p-4">
             <Button variant="link" asChild className="text-primary h-8 w-8 p-0">
-              <a href="https://github.com/Georgegriff/react-dnd-kit-tailwind-shadcn-ui">
+              <a href="https://github.com/owililegacy">
                 <Github className="fill-current h-full w-full" />
               </a>
             </Button>
             <Button variant="link" asChild className="text-primary h-16 w-16">
-              <a href="https://griffa.dev">@griffadev</a>
+              <a href="https://github.com/owililegacy">@owililegacy</a>
             </Button>
             <ThemeToggle />
           </header>
