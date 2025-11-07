@@ -3,6 +3,11 @@
 {
   "compilerOptions": {
     "jsx":"react-jsx",
+    "esModuleInterop": true,       // Allows default imports
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
