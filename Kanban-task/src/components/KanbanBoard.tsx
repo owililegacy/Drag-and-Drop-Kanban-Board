@@ -19,7 +19,21 @@ import {
 import { SortableContext, arrayMove } from "@dnd-kit/sortable";
 import { type Task, TaskCard } from "./TaskCard";
 import type { Column } from "./BoardColumn";
-import { hasDraggableData } from "./utils";
+import { Active, Over } from "@dnd-kit/core";
+
+interface DraggableData {
+  type: "Column" | "Task";
+  [key: string]: any;
+}
+
+export function hasDraggableData(element: Active | Over | null): element is Active & {
+  data: {
+    current: DraggableData;
+  };
+} {
+  if (!element?.data?.current) return false;
+  return "type" in element.data.current;
+};
 import { coordinateGetter } from "./multipleContainersKeyboardPresent";
 
 const defaultCols = [
